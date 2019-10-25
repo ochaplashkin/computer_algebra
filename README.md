@@ -4,11 +4,16 @@
 2. ```python3.7 -m pip install -r requierments.txt```
 3. ```python3.7 <lection_folder>/main.py [optional arguments]```
 
+#### Модульное тестирование
+После скачивания репозитария настоятельно рекомендуется запустить локальные модульные тесты для методов:
+1. ```cd <lection_folder>```
+2. ```python3.7 -m unittest --local units.py```
+
 #### Содержание
   - Лекция 1. Алгоритмы нахождения НОД(а,b) в кольцах:
     кол
-      - [Алгоритм 1. Классический;]()
-      - [Алгоритм 2. Алгоритм Евклида;]()
-      - [Алгоритм 3. Бинарный;]()
-      - [Алгоритм 4. Через примарное разложение;]()
-      - [Алгоритм 5. Расширенный алгоритм Евклида.]()
+      - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L16)
+      - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L35)
+      - [Алгоритм 3. Бинарный;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L52)
+      - [Алгоритм 4. Через примарное разложение;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L84)
+      - [Алгоритм 5. Расширенный алгоритм Евклида.](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L114)
