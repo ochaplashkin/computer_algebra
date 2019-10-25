@@ -11,7 +11,6 @@
 
 #### Содержание
   - Лекция 1. Алгоритмы нахождения НОД(а,b) в кольцах:
-    кол
       - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L16)
       - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L35)
       - [Алгоритм 3. Бинарный;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L52)
