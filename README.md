@@ -10,9 +10,9 @@
 2. ```python3.7 -m unittest --local units.py```
 
 #### Содержание
-  - Лекция 1. Алгоритмы нахождения НОД(а,b) в кольцах:
-      - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L38)
-      - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L57)
-      - [Алгоритм 3. Бинарный;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L74)
-      - [Алгоритм 4. Через примарное разложение;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L102)
-      - [Алгоритм 5. Расширенный алгоритм Евклида.](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L136)
+  - Лекция 1. Алгоритмы нахождения НОД(а,b) в кольцах Z:
+      - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L39)
+      - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L58)
+      - [Алгоритм 3. Бинарный;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L75)
+      - [Алгоритм 4. Через примарное разложение;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L103)
+      - [Алгоритм 5. Расширенный алгоритм Евклида.](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L137)
