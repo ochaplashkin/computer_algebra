@@ -2,20 +2,43 @@
 # -*- coding: utf-8 -*-
 import json
 
-
 def is_valid_data(a,b):
     '''
-    Helper
+    Helper function that checks input data
+
+    :param a,b: two numbers
+    :param a,b: int > 0
+
+    :return: validation result
+    :rtype: bool
+
     '''
     if isinstance(a, int) and isinstance(b, int):
         if a > 0 and b > 0:
             return True
     return False
 
+def read_file(filename):
+    '''
+    Helper-function that reads file
+
+    :param filename: file name
+    :type filename: str
+
+    :return: data from file
+    :rtype: dict
+    '''
+    try:
+        with open(filename) as f:
+            data = json.load(f)
+            return data
+    except:
+        raise Exception("Could not read file: %s" % filename)
+
 
 def classic(a,b):
     '''
-    :param a,b: two numbers
+    :param a,b: two numbers > 0
     :type a,b: int > 0
 
     :return: NOD(a,b)
@@ -34,7 +57,7 @@ def classic(a,b):
 
 def euclidean(a,b):
     '''
-    :param a,b: two numbers
+    :param a,b: two numbers > 0
     :type a,b: int > 0
 
     :return: NOD(a,b)
@@ -51,7 +74,7 @@ def euclidean(a,b):
 
 def binary(a,b):
     '''
-    :param a,b: two numbers
+    :param a,b: two numbers > 0
     :type a,b: int > 0
 
     :return: NOD(a,b)
@@ -63,33 +86,34 @@ def binary(a,b):
     x,y = a,b
     d = 1
     while (x % 2 == 0) and (y % 2 == 0):
-        d = 2 * d
-        x = x / 2
-        y = y / 2
-        while x == y:
-            if x % 2 == 0:
-                x = x / 2
-                continue
-            if y % 2 == 0:
-                y = y / 2
-                continue
-            if x > y:
-                x = x - y
-                continue
-            if x < y:
-                y = y - x
-                continue
+        d = d << 1
+        x = x >> 1
+        y = y >> 1
+    while x != y:
+        if x % 2 == 0:
+            x = x >> 1
+        if y % 2 == 0:
+            y = y >> 1
+        if x > y:
+            x = x - y
+        if x < y:
+            y = y - x
     return d*x
 
-def with_prime_numbers(a,b):
+def with_prime_numbers(a,b,prime_numbers_file='./prime_numbers.json'):
     '''
-    #TODO: check it
+    :param a,b: two numbers > 0
+    :type a,b: int > 0
+
+    :return: NOD(a,b)
+    :type: int > 0 or None
     '''
     if not is_valid_data(a,b):
         return None
 
-    with open('./prime_numbers.json') as f:
-        prime_numbers = json.load(f)['list']
+    prime_numbers = read_file(prime_numbers_file)["list"]
+    if not prime_numbers:
+        return None
 
     x,y = a,b
     d = 1
@@ -109,7 +133,6 @@ def with_prime_numbers(a,b):
             return None
         p = prime_numbers[_n]
     return d
-
 
 def extended_euclidean(a,b,return_only_NOD=True):
     '''
