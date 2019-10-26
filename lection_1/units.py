@@ -1,7 +1,7 @@
-import main as test_obj
-import unittest
-import json
 import os
+import json
+import unittest
+import main as test_obj
 
 class TestAlgorithms(unittest.TestCase):
 
@@ -15,11 +15,8 @@ class TestAlgorithms(unittest.TestCase):
         self.assertEqual(test_obj.extended_euclidean(a,b), expected)
 
     '''
-
     Negative test-cases
-
     '''
-    # self.assertRaises('This is broken' in str(context.exception)
 
     def test_zero(self):
         self.run_algorithms(0,0,None)
@@ -68,10 +65,9 @@ class TestAlgorithms(unittest.TestCase):
             os.remove(filename)
 
     '''
-
     Positive test-cases
-
     '''
+
     def test_positive(self):
         a        = [1, 5, 5,  5,  10, 50, 24, 30,  34,   60, 280,  585, 680,  824, 32769, 32770, 65536]
         b        = [1, 1, 5, 10,  15, 10, 42, 45, 1717, 539, 588,  360, 612,  808,   717,   717, 32769]
