@@ -1,13 +1,9 @@
-# Компьютерная алгебра
+# Компьютерная алгебра [![Build Status](https://travis-ci.org/ochaplashkin/computer_algebra.svg?branch=master)](https://travis-ci.org/ochaplashkin/computer_algebra)
+
 #### Установка и запуск
 1. ```git clone https://github.com/ochaplashkin/computer_algebra```
 2. ```python3.7 -m pip install -r requierments.txt```
 3. ```python3.7 <lection_folder>/main.py [optional arguments]```
-
-#### Модульное тестирование
-После скачивания репозитария настоятельно рекомендуется запустить локальные модульные тесты для методов:
-1. ```cd <lection_folder>```
-2. ```python3.7 -m unittest --local units.py```
 
 #### Содержание
   - Лекция 1. Алгоритмы нахождения НОД(а,b) в кольцах Z:

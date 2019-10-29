@@ -76,7 +76,5 @@ class TestAlgorithms(unittest.TestCase):
         for i in range(0,len(a)):
             self.run_algorithms(a[i],b[i],expected[i])
 
-
-
 if __name__ == '__main__':
     unittest.main()
