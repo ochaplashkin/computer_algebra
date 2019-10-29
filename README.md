@@ -1,4 +1,4 @@
-# Компьютерная алгебра [![Build Status](https://travis-ci.org/ochaplashkin/computer_algebra.svg?branch=master)](https://travis-ci.org/ochaplashkin/computer_algebra)
+# Компьютерная алгебра [![Build Status](https://travis-ci.org/ochaplashkin/computer_algebra.svg?branch=master)](https://travis-ci.org/ochaplashkin/computer_algebra) [![codecov](https://codecov.io/gh/ochaplashkin/computer_algebra/branch/master/graph/badge.svg)](https://codecov.io/gh/ochaplashkin/computer_algebra)
 
 #### Установка и запуск
 1. ```git clone https://github.com/ochaplashkin/computer_algebra```
