@@ -8,5 +8,5 @@ install:
   - pip install codecov
 script:
   - cd ./lection_1 && coverage run units.py; cd ..
-after_success:
-  - codecov
+after_script:
+  - bash <(curl -s https://codecov.io/bash)
