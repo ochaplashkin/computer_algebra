@@ -154,6 +154,3 @@ def extended_euclidean(a,b,return_only_NOD=True):
     if return_only_NOD:
         return x[0]
     return x
-
-if __name__ == '__main__':
-    main()
