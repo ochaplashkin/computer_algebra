@@ -1,9 +1,9 @@
 sudo : false
 language: python
-install:
-  - pip install codecov
 python:
   - "3.7"
+install:
+  - pip3 install codecov
 script:
   - cd ./lection_1 && coverage run units.py; cd ..
 after_success:
