@@ -7,4 +7,4 @@ python:
 script:
   - cd ./lection_1 && coverage run units.py; cd ..
 after_success:
-  - codecov
+  - codecov --token=d7280246-9435-4b35-b84d-8526acd28561
