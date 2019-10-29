@@ -2,9 +2,11 @@ sudo : false
 language: python
 python:
   - "3.7"
+env:
+  - CODECOV_TOKEN=d7280246-9435-4b35-b84d-8526acd28561
 install:
-  - pip3 install codecov
+  - pip install codecov
 script:
   - cd ./lection_1 && coverage run units.py; cd ..
 after_success:
-  - codecov --token=d7280246-9435-4b35-b84d-8526acd28561
+  - codecov
