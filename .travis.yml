@@ -1,5 +1,10 @@
+sudo : false
 language: python
+install:
+  - pip install codecov
 python:
   - "3.7"
 script:
-  - cd ./lection_1 && python3 -m unittest units.py; cd ..
+  - cd ./lection_1 && coverage run units.py; cd ..
+after_success:
+  - codecov
