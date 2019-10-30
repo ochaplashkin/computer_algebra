@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import json
+import argparse
 
 def is_valid_data(a,b):
     '''
@@ -154,3 +155,37 @@ def extended_euclidean(a,b,return_only_NOD=True):
     if return_only_NOD:
         return x[0]
     return x
+
+def params(args=None):
+    parser = argparse.ArgumentParser(args)
+    parser.add_argument('-k', '--kind', required=True, dest='KIND',
+                        default='classic', type=str, help='Enter kind of algorithms')
+    parser.add_argument('-a', '--a',    required=True, dest='A',
+                        default=1, type=int, help='Enter your a value')
+    parser.add_argument('-b', '--b',    required=True, dest='B',
+                        default=1, type=int, help='Enter your b value')
+    return parser.parse_args()
+
+def main():
+    p = params()
+    kind = p.KIND
+    a,b = p.A, p.B
+    result = 0
+    if kind == 'classic':
+        result = classic(a,b)
+    if kind == 'euclidean':
+        result = euclidean(a,b)
+    if kind == 'binary':
+        result = binary(a,b)
+    if kind == 'prime':
+        result = with_prime_numbers(a,b)
+    if kind == 'exteuclidean':
+        result = extended_euclidean(a,b)
+
+    out = f'NOD({a},{b}) = {result}'
+    if not result:
+        out = f'There are errors in your parametres or project structure.\nProject MUST contain "prime_numbers.json" file'
+    print(out)
+
+if __name__ == '__main__':
+    main()
