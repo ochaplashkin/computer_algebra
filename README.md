@@ -9,12 +9,12 @@
 #### Содержание
   - Лекция 1. Алгоритмы нахождения НОД(а,b) в кольце Z(целые, положительные, не содержит 0):
       - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L39)
-      - ```python3.7 ./lection_1/main.py -k classic -a 10 -b 5```
+        - ```python3.7 ./lection_1/main.py -k classic -a 10 -b 5```
       - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L58)
-      - ```python3.7 ./lection_1/main.py -k euclidean -a 10 -b 5```
+        - ```python3.7 ./lection_1/main.py -k euclidean -a 10 -b 5```
       - [Алгоритм 3. Бинарный;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L75)
-      - ```python3.7 ./lection_1/main.py -k binary -a 10 -b 5```
+        - ```python3.7 ./lection_1/main.py -k binary -a 10 -b 5```
       - [Алгоритм 4. Через примарное разложение;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L103)
-      - ```python3.7 ./lection_1/main.py -k prime -a 10 -b 5```
+        - ```python3.7 ./lection_1/main.py -k prime -a 10 -b 5```
       - [Алгоритм 5. Расширенный алгоритм Евклида.](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L137)
-      - ```python3.7 ./lection_1/main.py -k exteuclidean -a 10 -b 5```
+        - ```python3.7 ./lection_1/main.py -k exteuclidean -a 10 -b 5```
