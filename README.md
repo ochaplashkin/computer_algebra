@@ -8,10 +8,7 @@
 
 #### Содержание
   - Алгоритмы нахождения НОД(а,b) в кольце Z(целые, положительные, не содержит 0):
-    >`python3.7 ./lection_1/main.py -k <algorithm> -a <first_number> -b <second_number>`
-    >`<algorithm>`     = classic | euclidean | binary | prime | exteuclidean
-    >`<first_number>`  = 1 | 2 | 3 | ...
-    >`<second_number>` = 1 | 2 | 3 | ...
+    `python3.7 ./lection_1/main.py -k <algorithm> -a <first_number> -b <second_number>`
       - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L39)
         - ```python3.7 ./lection_1/main.py -k classic -a 10 -b 5```
       - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L58)
@@ -22,7 +19,7 @@
         - ```python3.7 ./lection_1/main.py -k prime -a 10 -b 5```
       - [Алгоритм 5. Расширенный алгоритм Евклида.](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_1/main.py#L137)
         - ```python3.7 ./lection_1/main.py -k exteuclidean -a 10 -b 5```
-  - [Алгоритм 6. Обобщённый алгоритм Евклида для полиномов над целыми числами]()
-  - [Алгоритм 7. Китайская теорема об остатках]()
-    >`python3.7 ./lection_3/main.py -in <path_to_your_file> [-f <show full answer>]`
-    > Входной файл должен быть в формате YAML и иметь аналогичную структуру input.yaml
+  - Алгоритм 6. Обобщённый алгоритм Евклида для полиномов над целыми числами (не реализован)
+  - [Алгоритм 7. Китайская теорема об остатках](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_3/main.py#L32)
+   - ```python3.7 ./lection_3/main.py -in <path_to_your_file> [-f <show full answer>]```
+   Входной файл должен быть в формате YAML и иметь аналогичную структуру input.yaml.
