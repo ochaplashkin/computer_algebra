@@ -3,7 +3,8 @@
 #### Установка и запуск
 1. ```git clone https://github.com/ochaplashkin/computer_algebra```
 2. ```python3.7 -m pip install -r requierments.txt```
-3. ```python3.7 ./<lection_folder>/main.py [requiered arguments]```
+3. ```cd <lection_folder>
+3. ```python3.7 main.py [requiered arguments]```
 ------------
 #### Содержание
   - Алгоритмы нахождения НОД(а,b) в кольце Z(целые, положительные, не содержит 0):
