@@ -7,6 +7,6 @@ env:
 install:
   - pip install codecov
 script:
-  - cd ./lection_1 && coverage run units.py; cd ..
+  - cd ./lection_1 && coverage run units.py && mv .coverage ../lection_3/.coverage; cd ..;  cd ./lection_3 && coverage run --source=. -a units.py; coverage combine; mv .coverage ../.coverage; cd ..
 after_script:
   - bash <(curl -s https://codecov.io/bash)
