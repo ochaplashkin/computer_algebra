@@ -166,7 +166,7 @@ def params(args=None):
                         default=1, type=int, help='Enter your b value')
     return parser.parse_args()
 
-def main():
+if __name__ == '__main__':
     p = params()
     kind = p.KIND
     a,b = p.A, p.B
@@ -184,8 +184,5 @@ def main():
 
     out = f'NOD({a},{b}) = {result}'
     if not result:
-        out = f'There are errors in your parametres or project structure.\nProject MUST contain "prime_numbers.json" file'
+        out = f'There are errors in your parametres or project structure.\nAlso, project MUST contain "prime_numbers.json" file'
     print(out)
-
-if __name__ == '__main__':
-    main()

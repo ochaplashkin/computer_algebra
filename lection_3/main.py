@@ -69,6 +69,7 @@ def str2bool(v):
         return True
     if v.lower() in ('no', 'false', 'f', 'n', '0'):
         return False
+
 def params(args=None):
 
     parser = argparse.ArgumentParser(args)
@@ -78,13 +79,11 @@ def params(args=None):
                         type=str2bool, help='Do you want look on the full answer your system? (true/false)')
     return parser.parse_args()
 
-def main():
+
+if __name__ == '__main__':
     p = params()
     input_file = p.INFILE
     isfull = p.FULL
     r,m = read_yaml_file(input_file)
     a = chinese_algorithm(r,m,full_asnwer_str=isfull)
     print(a)
-
-if __name__ == '__main__':
-    main()
