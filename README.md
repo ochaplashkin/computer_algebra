@@ -3,17 +3,17 @@
 #### Установка и запуск
 1. ```git clone https://github.com/ochaplashkin/computer_algebra```
 2. ```python3.7 -m pip install -r requierments.txt```
-3. ```python3.7 ./<lection_folder>/main.py [optional arguments]```
+3. ```python3.7 ./<lection_folder>/main.py [requiered arguments]```
 ------------
 #### Содержание
   - Алгоритмы нахождения НОД(а,b) в кольце Z(целые, положительные, не содержит 0):
-      - [Алгоритм 1. Классический;]()
-      - [Алгоритм 2. Алгоритм Евклида;]()
-      - [Алгоритм 3. Бинарный;]()
-      - [Алгоритм 4. Через примарное разложение;]()
-      - [Алгоритм 5. Расширенный алгоритм Евклида.]()
+      - [Алгоритм 1. Классический;](https://github.com/ochaplashkin/computer_algebra/blob/master/README.md#алгоритм-1-классический)
+      - [Алгоритм 2. Алгоритм Евклида;](https://github.com/ochaplashkin/computer_algebra/blob/master/README.md#алгоритм-2-алгоритм-евклида)
+      - [Алгоритм 3. Бинарный;](https://github.com/ochaplashkin/computer_algebra/blob/master/README.md#алгоритм-3-бинарный)
+      - [Алгоритм 4. Через примарное разложение;](https://github.com/ochaplashkin/computer_algebra/blob/master/README.md#алгоритм-4-через-примарное-разложение)
+      - [Алгоритм 5. Расширенный алгоритм Евклида.](https://github.com/ochaplashkin/computer_algebra/blob/master/README.md#алгоритм-5-расширенный-алгоритм-евклида)
   - Алгоритм 6. Обобщённый алгоритм Евклида для полиномов над целыми числами (не реализован)
-  - [Алгоритм 7. Китайская теорема об остатках](https://github.com/ochaplashkin/computer_algebra/blob/master/lection_3/main.py#L32)
+  - [Алгоритм 7. Китайская теорема об остатках](https://github.com/ochaplashkin/computer_algebra/blob/master/README.md#алгоритм-7-китайская-теорема-об-остатках)
 ------------
 ##### Алгоритм 1. Классический
 
