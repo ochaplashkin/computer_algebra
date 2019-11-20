@@ -6,6 +6,7 @@ env:
   - CODECOV_TOKEN=d7280246-9435-4b35-b84d-8526acd28561
 install:
   - pip install codecov
+  - pip install -r requierments.txt
 script:
   - cd ./lection_1 && coverage run units.py && mv .coverage ../lection_3/.coverage; cd ..;  cd ./lection_3 && coverage run --source=. -a units.py; mv .coverage ../.coverage; cd ..;
 after_script:
