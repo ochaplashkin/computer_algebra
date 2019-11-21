@@ -8,10 +8,12 @@ from functools import reduce
 
 def extended_euclidean(a,b,return_only_NOD=True):
     '''
+    Calculates GCD(a,b) through extended algorithm
+
     :param a,b: two numbers
     :type a,b: int > 0
 
-    :return: NOD(a,b) or [d,u,v]
+    :return: GCD(a,b) or [d,u,v]
     :type: int > 0 or list of int or None
     '''
     assert isinstance(a, int) , f"type({a}) is not 'int'"
@@ -31,6 +33,20 @@ def extended_euclidean(a,b,return_only_NOD=True):
 
 def chinese_algorithm(r,m,full_asnwer_str=False):
     '''
+    Solves a specific system such as:
+    x = r1 (mod m1)
+    x = r2 (mod m2)
+        ...
+
+    :param r:
+    :param m:
+    :type r,m: list of integers(len > 1)
+
+    :param full_asnwer_str: do you want to show full answer of system?
+    :type full_asnwer_str: boolean
+
+    :return: answer
+    :rtype: int or string answer=reminder(mod M)
     '''
     assert isinstance(m,list) , (f"Modules {m} must be includes to the list. "
                                 "Check your .yaml file")
@@ -52,6 +68,24 @@ def chinese_algorithm(r,m,full_asnwer_str=False):
     return a
 
 def read_yaml_file(filename):
+    '''
+    Reads YAML file that must contain structure:
+    r:
+    - value1
+    - value2
+    ...
+    m:
+    -value1
+    -value2
+    ...
+
+    :param filename: pat to the YAML file
+    :type filename: string
+
+    :return: values from system(r,m)
+    :rtype: tuple of list -> ([],[])
+
+    '''
     assert '.yaml' in filename or '.yml' , f"{filename} is NOT YAML format"
 
     with open(filename, 'r') as stream:
@@ -63,6 +97,15 @@ def read_yaml_file(filename):
                             'Check your .yaml file')
 
 def str2bool(v):
+    '''
+    Helper for arguments
+
+    :param v: string for check
+    :type v: str
+
+    :return: boolean value
+    :rtype: bool
+    '''
     if isinstance(v, bool):
        return v
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -71,14 +114,12 @@ def str2bool(v):
         return False
 
 def params(args=None):
-
     parser = argparse.ArgumentParser(args)
     parser.add_argument('-in', '--input', required=True, dest='INFILE',
                         default='input.txt', type=str, help='Enter your input file with values (r and m)')
     parser.add_argument('-f', '--full', required=True, dest='FULL',
                         type=str2bool, help='Do you want look on the full answer your system? (true/false)')
     return parser.parse_args()
-
 
 if __name__ == '__main__':
     p = params()

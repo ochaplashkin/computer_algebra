@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import os
-import unittest
 import yaml
+import unittest
 import main as test_obj
 
 r = [
@@ -110,8 +110,6 @@ class TestChineseModule(unittest.TestCase):
         for i in range(0,len(r),1):
             response_bool = test_obj.str2bool(test_bool[i])
             self.assertEqual(response_bool,expected_bool[i])
-
-
 
 if __name__ == '__main__':
     unittest.main()
